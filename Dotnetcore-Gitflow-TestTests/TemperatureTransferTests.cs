@@ -29,8 +29,8 @@ namespace Dotnetcore_Gitflow_Test.Tests
         }
 
         [Theory]
-        //[InlineData(32, 0)]
-        [InlineData(32, 50)]
+        [InlineData(32, 0)]
+        //[InlineData(32, 50)]
         [InlineData(77, 25)]
         [InlineData(-459.67, -273.15)]
         [InlineData(50.97, 10.54)]
