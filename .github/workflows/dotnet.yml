@@ -7,6 +7,14 @@ on:
     branches: [ master ]
 
 jobs:
+  console:
+    name: console
+    runs-on: ubuntu-latest
+    steps:
+    - name: go hell
+      run: echo ${{ secrets.SONARQUBE_HOST }}
+    - name: test
+      run: echo ${{ secrets.SONARQUBE_TOKEN }}
   sonarQubeTrigger:
     name: SonarQube Trigger
     runs-on: ubuntu-latest
