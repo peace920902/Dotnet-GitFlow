@@ -9,15 +9,6 @@ namespace Dotnetcore_Gitflow_Test
             return Math.Round(c * 9 / 5 + 32, 2);
         }
 
-        public double ConvertToFs(double c)
-        {
-            return Math.Round(c * 9 / 5 + 32, 2);
-        }
-        public double ConvertToFa(double c)
-        {
-            return Math.Round(c * 9 / 5 + 32, 2);
-        }
-        
         public double ConvertToC(double f)
         {
             return Math.Round((f - 32) * 5 / 9, 2);
