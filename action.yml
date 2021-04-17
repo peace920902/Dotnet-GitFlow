@@ -17,4 +17,4 @@ input:
     required: true
 runs:
   using: "node12"
-  main: "SonarQube/dist/index.js"
+  main: "dist/index.js"
