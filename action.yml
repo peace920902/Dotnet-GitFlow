@@ -16,5 +16,5 @@ input:
     description: "Project key from sonarcloud"
     required: true
 runs:
-  using: "node14"
+  using: "node12"
   main: "SonarQube/dist/index.js"
