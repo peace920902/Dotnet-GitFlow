@@ -58,6 +58,6 @@ jobs:
         id: checkGateway
         with:
           hostname: "sonarcloud.io"
-          port: 443
+          port: "443"
           organization-key: "dotnetcore-sonar"
           project-key: "peace920902_Dotnet-GitFlow"

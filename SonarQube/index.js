@@ -27,7 +27,8 @@ try {
             let sonar = JSON.parse(requestBody);
             let element = findNewGateStatus(sonar);
             let gateway = element.events.find((e) => e.category == 'QUALITY_GATE');
-            console.log(`description: ${gateway.description}`);
+            console.log(gateway);
+            //console.log(`description: ${gateway.description}`);
             console.log(`status = ${status}`);
             if (status.toLocaleLowerCase() === "red") {
                 core.setFailed("Not pass sonar gateway");
