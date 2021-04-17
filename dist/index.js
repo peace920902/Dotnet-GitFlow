@@ -1,7 +1,7 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 264:
+/***/ 389:
 /***/ ((module) => {
 
 module.exports = eval("require")("@actions/core");
@@ -57,7 +57,7 @@ var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
 const https = __nccwpck_require__(211)
-const core = __nccwpck_require__(264);
+const core = __nccwpck_require__(389);
 
 try {
     const organization = core.getInput('organization-key');
