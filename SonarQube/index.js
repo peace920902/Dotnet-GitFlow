@@ -23,7 +23,8 @@ try {
         res.on('data', d => {
             body.push(d)
         }).on('end', () => {
-            requestBody = Buffer.concat(body).toString()
+            requestBody = Buffer.concat(body).toString();
+            console.log(requestBody);
             let sonar = JSON.parse(requestBody);
             let element = findNewGateStatus(sonar);
             let gateway = element.events.find((e) => e.category == 'QUALITY_GATE');
