@@ -470,8 +470,8 @@ const https = __nccwpck_require__(211);
 const core = __nccwpck_require__(722);
 
 try {
-    const organization = core.getInput('organization-key');
-    const project = core.getInput('project-key');
+    const organization = 'dotnetcore-sonar';//core.getInput('organization-key');
+    const project = 'peace920902_Dotnet-GitFlow';//core.getInput('project-key');
     const path = `/api/project_analyses/search?organization=${organization}&project=${project}&catagory=QUALITY_GATE`;
     const defaultHostname = 'sonarcloud.io';
     const defaultPort = 443;
@@ -492,11 +492,9 @@ try {
             body.push(d)
         }).on('end', () => {
             requestBody = Buffer.concat(body).toString();
-            console.log(requestBody);
             let sonar = JSON.parse(requestBody);
             let element = findNewGateStatus(sonar);
-            let gateway = element.events.find((e) => e.category == 'QUALITY_GATE');
-            console.log(gateway);
+            let gateway = element.events.find((e) => e.category === 'QUALITY_GATE');
             console.log(`description: ${gateway.description}`);
             status = gateway.name.split(' ')[0];
             console.log(`status = ${status}`);
@@ -521,7 +519,7 @@ function findNewGateStatus(json) {
     var result;
     json.analyses.forEach(element => {
         var time = new Date(element.date).getTime();
-        if (time > tempTime) {
+        if (time > tempTime && element.events.length > 0 && element.events.find(e => e.category == 'QUALITY_GATE')) {
             result = element;
             tempTime = time;
         }

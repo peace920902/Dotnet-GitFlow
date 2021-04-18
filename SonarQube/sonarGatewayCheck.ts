@@ -18,30 +18,28 @@ const req = https.request(requsetInfo, res => {
         let sonar = JSON.parse(responseBody);
         let element = findNewGateStatus(sonar);
         let gateway = element.events.find((e) => e.category == 'QUALITY_GATE');
-
-        console.log(gateway);
         console.log(`description: ${gateway.description}`);
-        let status: string = gateway.name.split(' ')[0];
+        let status = gateway.name.split(' ')[0];
         console.log(`status = ${status}`);
         if (status.toLocaleLowerCase() === "red") {
             core.setFailed("Not pass sonar gateway");
         }
     })
 })
-//console.log('step3');
+
 req.on('error', error => {
     console.error(error);
     core.setFailed(error.message);
 })
-//console.log('step4');
+
 req.end()
-//console.log('step5');
+
 function findNewGateStatus(json) {
     var tempTime = 0;
     var result;
     json.analyses.forEach(element => {
         var time = new Date(element.date).getTime();
-        if (time > tempTime) {
+        if (time > tempTime && element.events.length > 0 && element.events.find(e => e.category == 'QUALITY_GATE')) {
             result = element;
             tempTime = time;
         }
