@@ -470,8 +470,8 @@ const https = __nccwpck_require__(211);
 const core = __nccwpck_require__(722);
 
 try {
-    const organization = 'dotnetcore-sonar';//core.getInput('organization-key');
-    const project = 'peace920902_Dotnet-GitFlow';//core.getInput('project-key');
+    const organization = core.getInput('organization-key');
+    const project = core.getInput('project-key');
     const path = `/api/project_analyses/search?organization=${organization}&project=${project}&catagory=QUALITY_GATE`;
     const defaultHostname = 'sonarcloud.io';
     const defaultPort = 443;
