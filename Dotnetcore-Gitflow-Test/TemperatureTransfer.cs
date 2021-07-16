@@ -17,50 +17,50 @@ namespace Dotnetcore_Gitflow_Test
             {
                 Console.Write(4);
             }
-            else if (x == 1)
-            {
-                Console.Write(4);
-            }
-            else if (x == 1)
-            {
-                Console.Write(4);
-            }
-            else if (x == 1)
-            {
-                Console.Write(4);
-            }
-            else if (x == 1)
-            {
-                Console.Write(4);
-            }
-            else if (x == 1)
-            {
-                Console.Write(4);
-            }
-            else if (x == 1)
-            {
-                Console.Write(4);
-            }
-            else if (x == 1)
-            {
-                Console.Write(4);
-            }
-            else if (x == 1)
-            {
-                Console.Write(4);
-            }
-            else if (x == 1)
-            {
-                Console.Write(4);
-            }
-            else if (x == 1)
-            {
-                Console.Write(4);
-            }
-            else if (x == 1)
-            {
-                Console.Write(4);
-            }
+            // else if (x == 1)
+            // {
+            //     Console.Write(4);
+            // }
+            // else if (x == 1)
+            // {
+            //     Console.Write(4);
+            // }
+            // else if (x == 1)
+            // {
+            //     Console.Write(4);
+            // }
+            // else if (x == 1)
+            // {
+            //     Console.Write(4);
+            // }
+            // else if (x == 1)
+            // {
+            //     Console.Write(4);
+            // }
+            // else if (x == 1)
+            // {
+            //     Console.Write(4);
+            // }
+            // else if (x == 1)
+            // {
+            //     Console.Write(4);
+            // }
+            // else if (x == 1)
+            // {
+            //     Console.Write(4);
+            // }
+            // else if (x == 1)
+            // {
+            //     Console.Write(4);
+            // }
+            // else if (x == 1)
+            // {
+            //     Console.Write(4);
+            // }
+            // else if (x == 1)
+            // {
+            //     Console.Write(4);
+            // }
 
 
             return Math.Round(c * 9 / 5 + 32, 2);
@@ -77,50 +77,50 @@ namespace Dotnetcore_Gitflow_Test
             {
                 Console.Write(4);
             }
-            else if (x == 1)
-            {
-                Console.Write(4);
-            }
-            else if (x == 1)
-            {
-                Console.Write(4);
-            }
-            else if (x == 1)
-            {
-                Console.Write(4);
-            }
-            else if (x == 1)
-            {
-                Console.Write(4);
-            }
-            else if (x == 1)
-            {
-                Console.Write(4);
-            }
-            else if (x == 1)
-            {
-                Console.Write(4);
-            }
-            else if (x == 1)
-            {
-                Console.Write(4);
-            }
-            else if (x == 1)
-            {
-                Console.Write(4);
-            }
-            else if (x == 1)
-            {
-                Console.Write(4);
-            }
-            else if (x == 1)
-            {
-                Console.Write(4);
-            }
-            else if (x == 1)
-            {
-                Console.Write(4);
-            }
+            // else if (x == 1)
+            // {
+            //     Console.Write(4);
+            // }
+            // else if (x == 1)
+            // {
+            //     Console.Write(4);
+            // }
+            // else if (x == 1)
+            // {
+            //     Console.Write(4);
+            // }
+            // else if (x == 1)
+            // {
+            //     Console.Write(4);
+            // }
+            // else if (x == 1)
+            // {
+            //     Console.Write(4);
+            // }
+            // else if (x == 1)
+            // {
+            //     Console.Write(4);
+            // }
+            // else if (x == 1)
+            // {
+            //     Console.Write(4);
+            // }
+            // else if (x == 1)
+            // {
+            //     Console.Write(4);
+            // }
+            // else if (x == 1)
+            // {
+            //     Console.Write(4);
+            // }
+            // else if (x == 1)
+            // {
+            //     Console.Write(4);
+            // }
+            // else if (x == 1)
+            // {
+            //     Console.Write(4);
+            // }
             return Math.Round((f - 32) * 5 / 9, 2);
         }
     }
